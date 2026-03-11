@@ -13,7 +13,7 @@ $stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
 while ($row = $stmt->fetch()) {
-    echo $row['CustomerID'] . ' ' . $row['Name'] . "<br/>";
+    echo $row["CustomerID"] . " " . $row["Name"] . " " . $row["Email"] . " " . $row["CountryCode"] . " " . $row["OutstandingDebt"];
 }
 
 $conn = null;
